@@ -47,7 +47,7 @@ class Header extends React.Component {
           })}
         </div>
         <div className={"header-login-link"}>
-          <a>Login</a>
+          <a href={"https://news.ycombinator.com/login?goto=news"}>Login</a>
         </div>
       </div>
     );
