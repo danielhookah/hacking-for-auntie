@@ -1,9 +1,26 @@
-.rowWrapper {
+.data-wrapper {
   display: flex;
 }
-.rowWrapper > p {
+.data-wrapper > p {
   margin: 5px 0;
   font-size: 14px;
+}
+
+.data-wrapper.secondary > p,
+.data-wrapper.secondary a {
+  color: grey;
+  font-size: 10px;
+  margin: 0;
+}
+.data-wrapper.secondary > p:first-child {
+  margin-left: 37px;
+}
+
+.data-wrapper.secondary > a {
+  margin-left: 5px;
+}
+.data-wrapper.secondary > a:hover {
+  text-decoration: underline;
 }
 
 .index-number {
@@ -30,4 +47,9 @@
 }
 .row-url:hover {
   text-decoration: underline;
+}
+
+.break-column {
+  flex-basis: 100%;
+  width: 0;
 }

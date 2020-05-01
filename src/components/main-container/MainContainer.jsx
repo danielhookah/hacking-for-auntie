@@ -21,7 +21,7 @@ class MainContainer extends React.Component {
     return (
       <div className={"container"}>
         <Header />
-        {this.state.news.slice(0, 5).map((storyId, index) => (
+        {this.state.news.slice(0, 50).map((storyId, index) => (
           <Row key={storyId} storyId={storyId} indexNumber={++index} />
         ))}
         <Footer />
