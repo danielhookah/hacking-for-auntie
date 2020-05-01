@@ -1,0 +1,33 @@
+.rowWrapper {
+  display: flex;
+}
+.rowWrapper > p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.index-number {
+  color: grey;
+  padding-left: 10px;
+}
+.index-number::after {
+  content: "";
+  display: inline-block;
+  background-image: url("/grayarrow.gif");
+  background-repeat: no-repeat;
+  width: 10px;
+  height: 10px;
+  position: relative;
+  margin-bottom: 1px;
+  margin-right: 5px;
+}
+
+.row-url {
+  margin-left: 5px;
+  align-self: center;
+  font-size: 10px;
+  color: grey;
+}
+.row-url:hover {
+  text-decoration: underline;
+}

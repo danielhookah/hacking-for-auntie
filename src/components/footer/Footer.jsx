@@ -21,7 +21,6 @@ class Footer extends React.Component {
   }
 
   render() {
-    console.log(process.env.REACT_APP_API_KEY);
     return (
       <div className={"footer"}>
         <div className={"footer-link-wrapper"}>

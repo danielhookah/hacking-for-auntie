@@ -2,6 +2,8 @@ import React from "react";
 import "./MainContainer.css";
 import Header from "../header/Header";
 import Footer from "../footer/Footer";
+import Row from "../row/Row";
+import { getStoriesIds } from "../../services/ApiService";
 
 class MainContainer extends React.Component {
   constructor(props) {
@@ -11,12 +13,17 @@ class MainContainer extends React.Component {
     };
   }
 
+  componentDidMount() {
+    getStoriesIds().then((response) => this.setState({ news: response.data }));
+  }
+
   render() {
-    console.log(process.env.REACT_APP_API_KEY);
     return (
       <div className={"container"}>
         <Header />
-        <h1>qwe</h1>
+        {this.state.news.slice(0, 5).map((storyId, index) => (
+          <Row key={storyId} storyId={storyId} indexNumber={++index} />
+        ))}
         <Footer />
       </div>
     );
