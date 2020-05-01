@@ -18,7 +18,6 @@ class Header extends React.Component {
   }
 
   render() {
-    console.log(this.state.headerItems);
     return (
       <div className={"header"}>
         <img className={"logo"} src={"/../../logo.gif"} alt={"logo"} />
