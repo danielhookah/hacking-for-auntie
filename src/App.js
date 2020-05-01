@@ -3,7 +3,6 @@ import "./App.css";
 import MainContainer from "./components/main-container/MainContainer";
 
 function App() {
-  console.log(111);
   return (
     <div className="App">
       <MainContainer />

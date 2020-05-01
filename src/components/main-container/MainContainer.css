@@ -3,3 +3,9 @@
   background-color: rgb(246, 246, 239);
   margin: 0 auto;
 }
+
+.more-button {
+  margin-left: 37px;
+  font-size: 15px;
+  cursor: pointer;
+}
